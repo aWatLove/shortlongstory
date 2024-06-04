@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="20dp">
+
+    <ImageView
+        android:id="@+id/lk_img"
+        android:layout_width="87dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <EditText
+        android:id="@+id/lk_name"
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/lk_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lk_login"
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/lk_img"
+        app:layout_constraintTop_toBottomOf="@+id/lk_name" />
+
+    <EditText
+        android:id="@+id/lk_dob"
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/lk_img"
+        app:layout_constraintTop_toBottomOf="@+id/lk_lastname" />
+
+    <EditText
+        android:id="@+id/lk_lastname"
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/lk_img"
+        app:layout_constraintTop_toBottomOf="@+id/lk_name" />
+
+    <EditText
+        android:id="@+id/lk_pwd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Подтверждение пароля"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_pwd2" />
+
+    <EditText
+        android:id="@+id/lk_pwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Новый пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_pwd1" />
+
+    <Button
+        android:id="@+id/lk_edit_save"
+        android:layout_width="371dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="208dp"
+        android:gravity="center"
+        android:text="сохранить"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img" />
+
+    <Button
+        android:id="@+id/lk_edit_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="160dp"
+        android:gravity="center"
+        android:text="отменить"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_edit_save"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/lk_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="выбрать фото"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <Button
+        android:id="@+id/lk_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="изменить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/lk_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="сделать фото"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/lk_storage"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <EditText
+        android:id="@+id/lk_pwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="Старый пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img" />
+
+    <Button
+        android:id="@+id/lk_change_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="сохранить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_pwd3" />
+
+    <Button
+        android:id="@+id/lk_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сменить пароль"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/lk_edit"
+        app:layout_constraintTop_toBottomOf="@+id/lk_img"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/lk_change_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="отменить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lk_change_save"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

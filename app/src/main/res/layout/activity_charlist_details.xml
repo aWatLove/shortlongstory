@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharlistDetailsActivity">
+
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Имя персонажа"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Уровень"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterName" />
+
+    <TextView
+        android:id="@+id/characterClass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Класс и архетип"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterLevel" />
+
+    <TextView
+        android:id="@+id/characterRace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Раса"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterClass" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Редактировать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterRace" />
+
+    <TextView
+        android:id="@+id/textModifierCharisma"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelCharisma" />
+
+    <TextView
+        android:id="@+id/textModifierIntellegence"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="68dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelIntellegence" />
+
+    <TextView
+        android:id="@+id/textViewlabelDexterity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ловкость"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <TextView
+        android:id="@+id/textCharIntellegence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierIntellegence"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <TextView
+        android:id="@+id/textViewlabelIntellegence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Интеллект"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCharStrength" />
+
+    <TextView
+        android:id="@+id/textModifierStrength"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="68dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelStrength" />
+
+    <TextView
+        android:id="@+id/textCharStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierStrength"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <TextView
+        android:id="@+id/textModifierWisdom"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelWisdom" />
+
+    <TextView
+        android:id="@+id/textModifierConstitution"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelConstitution" />
+
+    <TextView
+        android:id="@+id/textModifierDexterity"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:text="+0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelDexterity" />
+
+    <TextView
+        android:id="@+id/textCharDexterity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierDexterity"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <TextView
+        android:id="@+id/textCharWisdom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierWisdom"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <TextView
+        android:id="@+id/textViewlabelStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="Сила"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <TextView
+        android:id="@+id/textViewlabelWisdom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Мудрость"
+        app:layout_constraintTop_toBottomOf="@+id/textCharDexterity"
+        tools:layout_editor_absoluteX="202dp" />
+
+    <TextView
+        android:id="@+id/textViewlabelConstitution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телосложение"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <TextView
+        android:id="@+id/textCharCharisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierCharisma"
+        tools:layout_editor_absoluteX="365dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="165dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:text="Характеристики"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterClass" />
+
+    <TextView
+        android:id="@+id/textViewlabelCharisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Харизма"
+        app:layout_constraintTop_toBottomOf="@+id/textCharConstitution"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <TextView
+        android:id="@+id/textCharConstitution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierConstitution"
+        tools:layout_editor_absoluteX="365dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="КД"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/kd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="10"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="30"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/initiative"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/initiative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/kd"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="Инициатива"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="Скорость"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="232dp"
+        android:text="Статы"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
