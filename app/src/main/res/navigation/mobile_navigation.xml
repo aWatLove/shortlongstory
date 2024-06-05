@@ -28,4 +28,16 @@
         android:name="com.example.lab8.ui.charsheet.CharsheetsPreviewFragment"
         android:label="Мои персонажи"
         tools:layout="@layout/fragment_charsheets_preview" />
+
+    <fragment
+        android:id="@+id/nav_create_charsheet"
+        android:name="com.example.lab8.ui.charsheet.CreateCharlistFragment"
+        android:label="Создание персонажа"
+        tools:layout="@layout/fragment_create_charlist" />
+
+    <fragment
+        android:id="@+id/nav_charsheet_details"
+        android:name="com.example.lab8.ui.charsheet.CharlistDetailsFragment"
+        android:label="Лист персонажа"
+        tools:layout="@layout/fragment_charlist_details" />
 </navigation>

@@ -18,17 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/charsheetsListView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="409dp"
-        android:layout_height="655dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="664dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createButton" >
+        app:layout_constraintTop_toBottomOf="@+id/createButton" />
 
-
-
-    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

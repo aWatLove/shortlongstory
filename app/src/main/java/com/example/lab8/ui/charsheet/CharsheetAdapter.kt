@@ -12,7 +12,7 @@ import com.example.lab8.R
 class CharsheetAdapter : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHolder>(CharsheetDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharsheetViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_creature, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_charlist_prev, parent, false)
         return CharsheetViewHolder(view)
     }
 
@@ -21,20 +21,16 @@ class CharsheetAdapter : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHo
     }
 
     class CharsheetViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val creatureName: TextView = itemView.findViewById(R.id.charLevel)
-        private val creatureSize: TextView = itemView.findViewById(R.id.charName)
-        private val creatureKind: TextView = itemView.findViewById(R.id.charClass)
-        private val creatureDangerIndicator: TextView = itemView.findViewById(R.id.charArchetype)
-        private val creatureDescription: TextView = itemView.findViewById(R.id.charStrength)
-        private val creatureMaker: TextView = itemView.findViewById(R.id.creatureMaker)
+        private val characterName: TextView = itemView.findViewById(R.id.charactePrevName)
+        private val characterLevel: TextView = itemView.findViewById(R.id.characterPrevLevel)
+        private val characterClass: TextView = itemView.findViewById(R.id.characterPrevClass)
+        private val characterRace: TextView = itemView.findViewById(R.id.characterPrevRace)
 
-        fun bind(creature: Charsheet) {
-            creatureName.text = creature.creatureName
-            creatureSize.text = creature.creatureSize
-            creatureKind.text = creature.creatureKind
-            creatureDangerIndicator.text = creature.creatureDangerIndicator.toString()
-            creatureDescription.text = creature.creatureDescription
-            creatureMaker.text = creature.creatureMaker
+        fun bind(character: Charsheet) {
+            characterName.text = character.name
+            characterLevel.text = character.level.toString()
+            characterClass.text = character.charClass
+            characterRace.text = character.race
         }
     }
 
