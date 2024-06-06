@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diceFragment">
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="130dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="56dp"
+        android:text="ROLL DICE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice" />
+
+    <EditText
+        android:id="@+id/diceCount"
+        android:layout_width="43dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="232dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="number"
+        android:textAlignment="viewEnd"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dice"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="232dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="20"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modifier"
+        android:layout_width="66dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="232dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="19dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="232dp"
+        android:layout_weight="1"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/dice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="234dp"
+        android:layout_weight="1"
+        android:text="d"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/diceCount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextview"
+        android:layout_width="415dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textSize="82sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

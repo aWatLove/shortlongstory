@@ -7,14 +7,17 @@
         <item
             android:id="@+id/nav_home"
             android:title="Личный кабинет" />
-        <item
-            android:id="@+id/nav_weather"
-            android:title="Погода" />
-        <item
-            android:id="@+id/nav_music"
-            android:title="Музыка" />
+<!--        <item-->
+<!--            android:id="@+id/nav_weather"-->
+<!--            android:title="Погода" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_music"-->
+<!--            android:title="Музыка" />-->
         <item
             android:id="@+id/nav_charsheet"
-            android:title="Мои персонажы" />
+            android:title="Мои персонажи" />
+        <item
+            android:id="@+id/nav_diceroll"
+            android:title="Кубики" />
     </group>
 </menu>
