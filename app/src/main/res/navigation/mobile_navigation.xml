@@ -12,18 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_weather"
-        android:name="com.example.lab8.ui.gallery.GalleryFragment"
-        android:label="Погода"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_music"
-        android:name="com.example.lab8.ui.slideshow.SlideshowFragment"
-        android:label="Музыка"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_charsheet"
         android:name="com.example.lab8.ui.charsheet.CharsheetsPreviewFragment"
         android:label="Мои персонажи"
@@ -49,7 +37,7 @@
 
     <fragment
         android:id="@+id/nav_diceroll"
-        android:name="com.example.lab8.diceFragment"
+        android:name="com.example.lab8.ui.dice.diceFragment"
         android:label="Кубики"
         tools:layout="@layout/fragment_dice" />
 </navigation>

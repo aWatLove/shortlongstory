@@ -1,11 +1,12 @@
-package com.example.lab8
+package com.example.lab8.ui.dice
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.lab8.databinding.FragmentCharsheetsPreviewBinding
+import android.view.inputmethod.InputMethodManager
 import com.example.lab8.databinding.FragmentDiceBinding
 import kotlin.random.Random
 
@@ -26,9 +27,13 @@ class diceFragment : Fragment() {
         val diceTextfield = binding.dice
         val modTextfield = binding.modifier
 
-        val resultTextView = binding.resultTextview
+        val imm = requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+
 
         binding.rollButton.setOnClickListener {
+            // Скрыть клавиатуру
+            imm.hideSoftInputFromWindow(view?.windowToken, 0)
+
             val count = countTextfield.text.toString().toIntOrNull() ?: 1
             val dice = diceTextfield.text.toString().toIntOrNull() ?: 20
             val mod = modTextfield.text.toString().toIntOrNull() ?: 0
