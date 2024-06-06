@@ -1,6 +1,9 @@
 package com.example.lab8.ui.charsheet
 
+import java.util.UUID
+
 class Charsheet(
+    var uuid: String = UUID.randomUUID().toString(),
     var author: String = "",
     var level: Int = 1,
     var name: String = "",

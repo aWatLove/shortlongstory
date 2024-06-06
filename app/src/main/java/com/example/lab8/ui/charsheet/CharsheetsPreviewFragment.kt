@@ -44,7 +44,14 @@ class CharsheetsPreviewFragment : Fragment() {
 
     private fun setupRecyclerView() {
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
-        charsheetAdapter = CharsheetAdapter()
+        charsheetAdapter = CharsheetAdapter { charsheet ->
+            // Сохранение данных на нажатом элементе
+            val bundleCreature = Bundle().apply {
+                putString("uuid",charsheet.uuid.toString())
+            }
+            findNavController().navigate(R.id.nav_charsheet_details, bundleCreature)
+
+        }
         binding.recyclerView.adapter = charsheetAdapter
     }
 
@@ -67,7 +74,7 @@ class CharsheetsPreviewFragment : Fragment() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(requireContext(), "Failed to load creatures", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Failed to load charsheets", Toast.LENGTH_SHORT).show()
             }
         })
     }

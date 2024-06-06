@@ -40,4 +40,10 @@
         android:name="com.example.lab8.ui.charsheet.CharlistDetailsFragment"
         android:label="Лист персонажа"
         tools:layout="@layout/fragment_charlist_details" />
+
+    <fragment
+        android:id="@+id/nav_edit_charsheet"
+        android:name="com.example.lab8.ui.charsheet.EditCharsheetFragment"
+        android:label="Редактирование персонажа"
+        tools:layout="@layout/fragment_edit_charsheet" />
 </navigation>

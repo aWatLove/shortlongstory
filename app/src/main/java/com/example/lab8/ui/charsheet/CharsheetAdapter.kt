@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lab8.R
 
-class CharsheetAdapter : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHolder>(CharsheetDiffCallback()) {
+class CharsheetAdapter(private val onItemClick: (Charsheet) -> Unit) : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHolder>(CharsheetDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharsheetViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_charlist_prev, parent, false)
@@ -17,7 +17,7 @@ class CharsheetAdapter : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHo
     }
 
     override fun onBindViewHolder(holder: CharsheetViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        holder.bind(getItem(position), onItemClick)
     }
 
     class CharsheetViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -26,11 +26,15 @@ class CharsheetAdapter : ListAdapter<Charsheet, CharsheetAdapter.CharsheetViewHo
         private val characterClass: TextView = itemView.findViewById(R.id.characterPrevClass)
         private val characterRace: TextView = itemView.findViewById(R.id.characterPrevRace)
 
-        fun bind(character: Charsheet) {
+        fun bind(character: Charsheet, onItemClick: (Charsheet) -> Unit) {
             characterName.text = character.name
             characterLevel.text = character.level.toString()
             characterClass.text = character.charClass
             characterRace.text = character.race
+
+            itemView.setOnClickListener {
+                onItemClick(character)
+            }
         }
     }
 
